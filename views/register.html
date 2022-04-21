@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bienvenidxs a MercadoLiebre</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-wrapper">
+          <a href="/" class="logo">
+            <img src="images/logo-mercado-liebre.svg" alt="Logo de MercadoLiebre" />
+          </a>
+          <form action="/" method="GET">
+            <div class="input-wrapper">
+              <input class="input-search" type="text" placeholder="Buscar productos, marcas y más" />
+              <i class="fa fa-search"></i>
+            </div>
+          </form>
+          <p><i class="fas fa-hand-holding-usd"></i> Comprá en cuotas y sin tarjeta de crédito</p>
+        </div>
+        <nav class="navbar">
+          <ul class="flex">
+            <li><a href="#">Ofertas</a></li>
+            <li><a href="#">Tiendas Oficiales</a></li>
+            <li><a href="#">Vender</a></li>
+            <li><a href="#">Ayuda</a></li>
+          </ul>
+          <ul class="flex">
+            <li>
+              <a href="/register">Creá tu cuenta <i class="far fa-id-card"></i></a>
+            </li>
+            <li>
+              <a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a>
+            </li>
+            <li>
+              <a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a>
+            </li>
+          </ul>
+        </nav>
+        <button class="btn-burguer">
+          <i class="fa fa-bars"></i>
+        </button>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="container">
+        <form class="form" action="/" method="get">
+          <div class="form-wrapper">
+            <h2 class="form__title">Registro</h2>
+            <input id="nombre" type="text" class="" placeholder="Nombre y apellido" name="nombre" />
+            <input id="user" type="text" class="" placeholder="Nombre de usuario" name="user" />
+            <input id="email" type="email" class="" placeholder="E-mail" />
+          </div>
+          <div class="form-wrapper">
+            <h2 class="form__title">Fecha de nacimiento</h2>
+            <input id="date" type="date" class="" />
+            <input id="address" type="text" class="" placeholder="Domicilio" name="address" />
+            <h2 class="form__title">Perfil del usuario</h2>
+            <div class="">
+              <input type="radio" name="profile" id="buyer" />
+              <label for="buyer">Comprador</label>
+              <input type="radio" name="profile" id="seller" />
+              <label for="seller">Vendedor</label>
+            </div>
+          </div>
+          <div class="form-wrapper">
+            <h2 class="form__title">Intereses</h2>
+            <div class="">
+              <input type="checkbox" name="electro" id="electro" value="electro" />
+              <label for="electro">Electro</label>
+            </div>
+            <div class="">
+              <input type="checkbox" name="fashion" id="fashion" value="moda" />
+              <label for="fashion">Moda</label>
+            </div>
+            <div class="">
+              <input type="checkbox" name="home" id="home" value="hogar" />
+              <label for="home">Hogar</label>
+            </div>
+            <div class="">
+              <input type="checkbox" name="toys" id="toys" value="jugueteria" />
+              <label for="toys">Juguetería</label>
+            </div>
+            <div class="">
+              <input type="checkbox" name="fitness" id="fitness" value="vida-sana" />
+              <label for="fitness">Vida sana</label>
+            </div>
+          </div>
+          <div class="form-wrapper">
+            <h2 class="form__title">Subí tu foto</h2>
+            <input type="file" name="" id="" />
+          </div>
+          <div class="form-wrapper">
+            <h2 class="form__title">Contraseña</h2>
+            <input class="" type="password" name="password1" id="password1" placeholder="Ingresar contraseña" />
+            <input class="" type="password" name="password2" id="password2" placeholder="Repetir contraseña" />
+          </div>
+          <div class="form__buttons">
+            <input type="submit" class="" value="Enviar" />
+            <input type="reset" class="" value="Borrar" />
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <section class="copyright">
+        <p>Copyright © 1999-2022 MercadoLiebre S.R.L.</p>
+      </section>
+    </footer>
+  </body>
+</html>
